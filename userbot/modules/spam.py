@@ -255,7 +255,7 @@ async def tmeme(event):
             )
 
 
-@cilik_cmd(pattern="(delayspam|dspam) ([\s\S]*)")
+@cilik_cmd(pattern="(gasin) ([\s\S]*)")
 async def dlyspam(event):
     reply = await event.get_reply_message()
     input_str = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
@@ -292,7 +292,7 @@ CMD_HELP.update(
         \n  •  **Function : **Spam kata teks demi kata.\
         \n\n  •  **Syntax :** `{cmd}picspam` <jumlah spam> <link image/gif>\
         \n  •  **Function : **Spam Foto Seolah-olah spam teks tidak cukup !!\
-        \n\n  •  **Syntax :** `{cmd}delayspam` <detik> <jumlah spam> <text>\
+        \n\n  •  **Syntax :** `{cmd}gasin` <detik> <jumlah spam> <text>\
         \n  •  **Function : **Spam surat teks dengan huruf.\
         \n\n  •  **NOTE : Spam dengan Risiko Anda sendiri**\
     "
